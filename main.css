@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "Segoe UI Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Regular"), url("Segoe UI.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Segoe UI Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Italic"), url("Segoe UI Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Segoe UI Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Bold"), url("Segoe UI Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Segoe UI Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Bold Italic"),
+    url("Segoe UI Bold Italic.woff") format("woff");
+}
+
+body {
+
+  background-image: url(arkaplan.gif);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+
+@keyframes bgchange {
+  0% {
+    background-color: rgb(121, 181, 255);
+  }
+  50% {
+    background-color: rgb(255, 255, 255);
+  }
+  100% {
+    background-color: rgb(121, 181, 255);
+  }
+}
+
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+div[id="headdiv"] {
+  background-image: linear-gradient(#000000, #0f0f0fa8);
+  animation-name: fadein;
+  animation-duration: 2s;
+  border-radius: 5px;
+}
+
+h1 {
+  font-family: Segoe UI;
+}
+
+h2 {
+  font-family: Segoe UI;
+}
+
+p {
+  font-family: Segoe UI Regular;
+}
+
+h1[id="websiteheader"] {
+  color: aliceblue;
+  text-align: center;
+  }
+
+p[id="headparag"] {
+  color: rgb(185, 185, 185);
+  text-align: center;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+td {
+  text-align: left;
+  margin-top: 50px;
+  padding-left: 100px;
+}
+
+div[id="whodiv"] {
+  background-image: linear-gradient(#001a45, #000a1a);
+
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+
+table {
+  text-align: left;
+}
+
+h1[id="skillheader"] {
+  color: #000a1a;
+  text-align: center;
+}
+
+th {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img[id="skills"] {
+  height: 50px;
+  border-radius: 15%;
+}
+
+tr[id="skillrow"] {
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #001a45;
+  background-image: linear-gradient(#000a1a, #001a45);
+  animation-name: fadein;
+  animation-duration: 2s;
+  margin: auto;
+  border-radius: 15px;
+}
+
+table[id="skilltable"] {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1[id="skilltext"] {
+  text-align: center;
+  animation-name: fadein;
+  animation-duration: 2s;
+  color: #e2e2e2;
+  text-shadow: 2px 2px #000000;
+}
+
+h2[id="skilltext"] {
+  text-align: center;
+  animation-name: fadein;
+  animation-duration: 2s;
+  color: #0058e6;
+}
+
+p[id="skilltext"] {
+  text-align: center;
+  animation-name: fadein;
+  animation-duration: 2s;
+  color: #003385;
+}
+
+img[id="skillimg"] {
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+
+
+div[id="linkdiv"]{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div[id="skilldiv"]{
+    background-color: rgba(0, 0, 0, 0.808);
+    padding: 30px;
+    width: 50%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(2px);
+
+
+}
