@@ -206,14 +206,13 @@ img[id="rateimg"]{
   width: 25%;
 }
 
-table[id="toptable"]{
-  background-color: #001a45;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  display: block;
+th {
+  font-family: Segoe UI Regular;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-
-td{
-  text-align: center;
+table{
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #000a1a;
 }
