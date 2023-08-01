@@ -28,8 +28,9 @@
 }
 
 body {
-  background-attachment: fixed;
   background-image: url(arkaplan.gif);
+  background-attachment: fixed;
+
 }
 
 @keyframes fadein {
