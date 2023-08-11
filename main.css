@@ -42,6 +42,34 @@ body {
   }
 }
 
+@keyframes hover {
+  from {transform: scale(1);}
+  to {transform: scale(1.1);}
+}
+
+@keyframes hoverreverse {
+  from {transform: scale(1.1);}
+  to {transform: scale(1);}
+}
+
+@keyframes wipe-enter {
+  0% {
+    transform: scale(1, 0);
+  }
+  15%{
+    transform: scale(1, 1);
+  }
+  75%{
+    transform: scale(1, 1);
+  }
+  90%{
+    transform: scale(1, 0);
+  }
+  
+  100%{
+    transform: scale(1, 0);
+  }
+}
 
 @keyframes bgchange {
   0% {
@@ -65,7 +93,16 @@ div[id="headdiv"] {
   border-radius: 5px;
 }
 
+h1:hover {
+  animation-name: hover;
+  animation-duration: 1s;
+  transform: scale(1.1);
+}
+
 h1 {
+  animation-name: hoverreverse;
+  animation-duration: 1s;
+  transform: scale(1);
   font-family: Segoe UI;
 }
 
@@ -138,6 +175,11 @@ table[id="skilltable"] {
   margin-right: auto;
   margin-left: auto;
 }
+h1:hover[id="skilltext"]{
+  animation-name: hover;
+animation-duration: 1s;
+transform: scale(1.1);
+}
 
 h1[id="skilltext"] {
   text-align: center;
@@ -145,6 +187,9 @@ h1[id="skilltext"] {
   animation-duration: 2s;
   color: #e2e2e2;
   text-shadow: 2px 2px #000000;
+  animation-name: hoverreverse;
+  animation-duration: 1s;
+  transform: scale(1);
 }
 
 h2[id="skilltext"] {
@@ -170,8 +215,10 @@ img[id="skillimg"] {
   margin-right: auto;
   width: 50px;
   
-  animation-name: fadein;
-  animation-duration: 2s;
+animation-name: wipe-enter;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+
 }
 
 
