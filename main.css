@@ -30,7 +30,6 @@
 body {
   background-image: url(arkaplan.gif);
   background-attachment: fixed;
-  overflow: hidden; /* Hide scrollbars */
 
 }
 
