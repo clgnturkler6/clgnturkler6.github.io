@@ -259,3 +259,26 @@ table{
   margin-left: auto;
   background-color: #000a1a;
 }
+blockquote{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+table[id="twitter"]{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+tr[id="twitter"]{
+  text-align: center;
+}
+
+td[id="twitter"]{
+  text-align: center;
+}
+
+blockquote{
+  width:100%;
+
+}
